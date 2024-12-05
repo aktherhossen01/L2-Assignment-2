@@ -4,7 +4,6 @@ import config from "./config";
 
 async function server(){
 
-
     try{
         await mongoose.connect(process.env.DATABASE_URL as string)
 
@@ -23,3 +22,5 @@ console.log(err);
 
 
 server()
+
+// export default server
