@@ -50,6 +50,7 @@ const getSingleCar = (req, res) => __awaiter(void 0, void 0, void 0, function* (
         //   console.log(req.params)
         const userId = req.params.userId;
         const result = yield car_service_1.carServices.getSingleCar(userId);
+        console.log(result);
         res.status(200).json({
             message: "Car retrieved successfully",
             success: true,

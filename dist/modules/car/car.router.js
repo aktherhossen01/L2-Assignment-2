@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const car_controller_1 = require("./car.controller");
 const carRouter = (0, express_1.Router)();
-carRouter.post('/create-car', car_controller_1.CarController.createCar);
+carRouter.post('/', car_controller_1.CarController.createCar);
 carRouter.get('/', car_controller_1.CarController.getCar);
 carRouter.get('/:userId', car_controller_1.CarController.getSingleCar);
 carRouter.put('/:userId', car_controller_1.CarController.updateCar);
