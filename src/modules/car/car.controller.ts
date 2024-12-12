@@ -59,6 +59,7 @@ const getSingleCar = async (req: Request, res: Response) => {
       const userId = req.params.userId
   
       const result = await carServices.getSingleCar(userId)
+  console.log(result);
   
       res.status(200).json({
         message:"Car retrieved successfully",

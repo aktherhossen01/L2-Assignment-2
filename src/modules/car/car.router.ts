@@ -3,7 +3,7 @@ import { CarController } from "./car.controller";
 
 const carRouter = Router()
 
-carRouter.post('/create-car',CarController.createCar)
+carRouter.post('/',CarController.createCar)
 carRouter.get('/',CarController.getCar)
 carRouter.get('/:userId',CarController.getSingleCar)
 carRouter.put('/:userId',CarController.updateCar)
